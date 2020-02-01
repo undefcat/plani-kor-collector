@@ -142,7 +142,7 @@ func main() {
 
 			for mi := range matches {
 				result := fmt.Sprintf("\"%s\",\"%s\"\n", path, matches[mi][1])
-				results = append(results, result)
+				results[mi] = result
 			}
 
 			out.WriteString(strings.Join(results, ""))

@@ -141,7 +141,7 @@ func main() {
 			results := make([]string, len(matches))
 
 			for mi := range matches {
-				result := fmt.Sprintf("%s,%s\n", path, matches[mi][1])
+				result := fmt.Sprintf("\"%s\",\"%s\"\n", path, matches[mi][1])
 				results = append(results, result)
 			}
 
